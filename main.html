@@ -4,27 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Email UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+
 </head>
 <body>
-    <div class = "container">
+    
         <div class = "row">
-            <div class = "left-column">
+            <div class = "col left-column">
                 <div class = "profile">
-                    <img id= "image" src="cpt-america.jpg" alt="">
+                    <img id= "image" src="cpt-shield-2.png" alt="">
                    <div class = "text"> Welcome Back, Robert! </div>
                 </div>
                 <div class = button-container>
                     
                     <button id = "compose-button">COMPOSE</button>
-                    </div>
+             </div>
+             <div class = "subsection-container">
+             <button class = "subsection">Inbox (1)</button>
+             <button class = "subsection">Tagged</button>
+             <button class = "subsection">Important</button>
+             <button class = "subsection">Sent Mail</button>
+             <button class = "subsection">Drafts</button>
+             <button class = "subsection">Trash</button>
+            </div>     
             </div>
-            <div class = "mid-column">
-                yo
+            <div class = "col mid-column">
+                <div class = "search-bar">
+                    <input id = "search-engine" type = "text" placeholder="Search for emails">
+                </div>
+            <div class = "email-previews">
+        
+                <div class = "actual-email">
+                    <div class = "email-top">
+                    <div class = "email-title">LinkedIn</div>
+                    <div class = "time-stamp"> 3:44 PM </div>
+                    </div>
+                <p>You have a new connection. Join Shawn Hosain on LinkedIn!</p>
+            
+            </div>
+       
+                <div class = "actual-email">
+                    <div class = "email-top">
+                    <div class = "email-title">Sony</div>
+                    <div class = "time-stamp"> 3/23/2021</div>
+                </div>
+                    <p>Thank you for your purchase. Your receipt has been attached.</p>
+                </div>
+                <div class = "actual-email">
+                    <div class = "email-top">
+                        <div class = "email-title">Microsoft</div>
+                        <div class = "time-stamp">3/20/2021</div>
+                    </div>  
+                    <p>Thank you for your interest, but we have moved on to other candidates.</p>
+
+                </div>
+                
+            </div>
             </div>
 
-            <div class = "right-column">
+            <div class = "col right-column">
 yo
             </div>
 
@@ -34,6 +74,6 @@ yo
 
 
     </div>
-    </div>
+ 
 </body>
 </html>

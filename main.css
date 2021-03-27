@@ -1,44 +1,49 @@
-.container{
-    width: 100%;
+
+html,body{
+    background-color: gray;
 }
+
+
 .left-column{
-  border: 5px solid red;
+  /* border: 5px solid red; */
   display: flex;
   flex-direction: column;
   min-width: 300px;
   max-width: 300px;
   height: 100vh;
-  float: left;
-  background-color: green;
+  /* float: left; */
+  background-color: rgb(24, 23, 23);
 }
 .mid-column{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     flex-direction: column;
-    display: grid;
-    min-width: 650px;
-    max-width: 650px;
-    float:left;
+    display: flex;
+    min-width: 350px;
+    max-width: 350px;
+    /* float:left; */
     height: 100vh;
-    background-color: orange;
+    background-color: rgb(56, 54, 54);
 
     
 }
 .right-column{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     flex-direction: column;
-    display: grid;
-    min-width: 900px;
-    max-width: 900px;
-    float: right;
+    display: flex;
+    min-width: 1224px;
+    max-width: 1224px;
+    /* float: right; */
     height: 100vh;
-    background-color: blue;
+    background-color: grey;
 } 
 #compose-button{
-    background-color: gray;
+    background-color: turquoise;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     width: 60%;
     border-radius: 10px;
+    color: white;
+    
     
     
     
@@ -46,7 +51,7 @@
     
 }
 #compose-button:hover{
-background-color: red;
+background-color: gray;
 cursor:pointer;
 }
 
@@ -55,21 +60,11 @@ cursor:pointer;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 50px;
     margin-top: 20px;
-    
-    
-    
-    
-
-    
-    
-    
-    
-
 }
 .profile{
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: 10px;
     justify-content: center;
     display: flex;
@@ -77,11 +72,64 @@ cursor:pointer;
     
 }
 #image {
-    height: 30px;
-    padding-top: 2px;
-    border-radius: 10px;
+    height: 60px;
+    padding-top: 1px;
+    border-radius: 17px;
     padding-right: 20px;
+    
 }
 .text {
-    font-size: 20px;
+    font-size: 19px;
+    margin-top: 15px;
+    color: white;
 }
+.subsection{
+    margin-top: 25px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    color: white;
+    
+    
+}
+.subsection:hover{
+    color: turquoise;
+   
+}
+.subsection-container{
+    margin-top: 40px;
+}
+#search-engine{
+    background-color:white;
+    border-radius: 10px;
+    width: 100%;
+
+}
+.search-bar{
+    margin-top: 25px;
+}
+.email-previews{
+    margin-top: 20px;
+}
+.actual-email{
+    margin-top: 50px;
+    color: white;
+    display:flex;
+    flex-direction: column;
+}
+.actual-email:hover{
+    color:turquoise ;
+    cursor: pointer;
+}
+p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.time-stamp{
+    
+}
+.email-top {
+    display: flex;
+    justify-content: space-between;
+} 
