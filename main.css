@@ -1,6 +1,6 @@
 
 html,body{
-    background-color: gray;
+    background-color: black;
 }
 
 
@@ -12,7 +12,7 @@ html,body{
   max-width: 300px;
   height: 100vh;
   /* float: left; */
-  background-color: rgb(24, 23, 23);
+  background-color: black;
 }
 .mid-column{
     /* border: 5px solid red; */
@@ -22,7 +22,7 @@ html,body{
     max-width: 350px;
     /* float:left; */
     height: 100vh;
-    background-color: rgb(56, 54, 54);
+    background-color: rgb(39, 38, 38);
 
     
 }
@@ -34,15 +34,18 @@ html,body{
     max-width: 1224px;
     /* float: right; */
     height: 100vh;
-    background-color: grey;
+    background-color: black;
 } 
 #compose-button{
-    background-color: turquoise;
+    background-color: grey;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     width: 60%;
     border-radius: 10px;
     color: white;
+   
+    background-color: transparent;
+    border-color: turquoise;
     
     
     
@@ -51,7 +54,7 @@ html,body{
     
 }
 #compose-button:hover{
-background-color: gray;
+background-color: turquoise;
 cursor:pointer;
 }
 
@@ -103,14 +106,26 @@ cursor:pointer;
     background-color:white;
     border-radius: 10px;
     width: 100%;
-
+    position: relative;
+    padding-left: 30px;
+}
+.magnifying-glass{
+    color:gray;
+    display: inline-block;
+    background: transparent;
+    position: absolute;
+    z-index: 2;
+    border: hidden;
+    
 }
 .search-bar{
     margin-top: 25px;
 }
 .email-previews{
     margin-top: 20px;
-}
+
+
+} 
 .actual-email{
     margin-top: 50px;
     color: white;
@@ -118,18 +133,118 @@ cursor:pointer;
     flex-direction: column;
 }
 .actual-email:hover{
-    color:turquoise ;
+    color: turquoise;
     cursor: pointer;
 }
 p{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    font-weight: lighter;
 }
 .time-stamp{
-    
+    font-style: italic;
 }
 .email-top {
     display: flex;
     justify-content: space-between;
 } 
+.email-title {
+    
+     font-weight: bold;
+    font-style: italic;
+} 
+
+.to-and-from{
+margin-top: 30px;
+padding-left: 120px;
+}
+.to-from-messages{
+    font-size: small;
+    color: white;
+
+} .selected-email-container{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+     .selected-email-icons{
+    display: flex;
+    margin-top: 5%;
+  
+}
+.selected-email-trash{
+    background: transparent;
+    color: white;
+    border: hidden;
+
+}.selected-email-trash:hover{
+    color: turquoise;
+}
+.selected-email-reply{
+    background: transparent;
+    color:white;
+    border: hidden;
+
+}.selected-email-reply:hover{
+    color: turquoise;
+}
+ .selected-email-title{
+    color: white;
+    padding-left: 10%;
+    margin-top: 5%;
+} .selected-email-options{
+    background: transparent;
+    color:white;
+    border: hidden;
+
+}.selected-email-options:hover{
+    color: turquoise;
+
+} 
+.email-text-received-container{
+    padding-left: 120px;
+    max-width: 100%;
+}
+
+
+.email-text{
+    color: white;
+    margin-top: 40px;
+}
+.reply-box-container{
+    background-color: rgb(39, 38, 38);
+    height: 30%;
+    margin-top: 160px;
+    margin-left: 70px;
+  
+    
+    
+} 
+.reply-button{
+   border-style: solid;
+   background-color: transparent;
+   border-color: turquoise;
+   border-radius: 10px;
+   color: white;
+
+}.reply-button:hover{
+    background-color: turquoise;
+} 
+ .reply-button-container{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 21%;
+    padding-right: 20px;
+}
+.attach-file-icon{
+    background-color: transparent;
+    color: white;
+    border:transparent;
+
+}
+.attach-file-icon:hover{
+    color: turquoise;
+}

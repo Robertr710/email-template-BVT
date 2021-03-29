@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email UI</title>
+    
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
 
@@ -28,15 +30,25 @@
              <button class = "subsection">Sent Mail</button>
              <button class = "subsection">Drafts</button>
              <button class = "subsection">Trash</button>
+             
             </div>     
             </div>
+            <!-- End left column col  -->
             <div class = "col mid-column">
                 <div class = "search-bar">
-                    <input id = "search-engine" type = "text" placeholder="Search for emails">
+                    <button class = "magnifying-glass"> 
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+
+                    </button>
+                    <input id = "search-engine" type = "search" placeholder="Search for emails"/>
                 </div>
             <div class = "email-previews">
         
                 <div class = "actual-email">
+                   
                     <div class = "email-top">
                     <div class = "email-title">LinkedIn</div>
                     <div class = "time-stamp"> 3:44 PM </div>
@@ -51,6 +63,7 @@
                     <div class = "time-stamp"> 3/23/2021</div>
                 </div>
                     <p>Thank you for your purchase. Your receipt has been attached.</p>
+                    
                 </div>
                 <div class = "actual-email">
                     <div class = "email-top">
@@ -60,20 +73,87 @@
                     <p>Thank you for your interest, but we have moved on to other candidates.</p>
 
                 </div>
-                
-            </div>
-            </div>
+                </div>
+                <!-- End email previews -->
 
+            </div> 
+            <!-- End middle column col -->
             <div class = "col right-column">
-yo
+                <div class = "to-and-from">
+                    <div class = "to-from-messages">To: rrodriguez4570@gmail.com</div>
+                    <div class = "to-from-messages">From: sony@playstation.us</div>
+                    </div>
+            
+            <div class = "selected-email-container"> 
+                <div class = "selected-email-title"> Sony</div>
+                <div class = "selected-email-icons">
+                <button class = "selected-email-trash"> 
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                      </svg>
+                    </button>
+
+                <button class = "selected-email-reply">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
+                        <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"/>
+                      </svg>
+                    </button>
+
+                    <button class = "selected-email-options">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg>
+                    </button>
+
+                </div> 
+            </div>
+            <!-- End email container -->
+            <div class = "email-text-received-container">
+                <div class = "email-text">Thank you for your purchase!</div>
+                <div class = "email-text">Transaction approved on 3/26/2021 at 3:03 PM</div>
+                <div class = "email-text">Discount code for future purchases: 3434ajdads313132saadasdaFSF</div>
+
             </div>
 
+            
+            <div class = "reply-box-container">
+                <div class = "reply-button-container">
+                     <button class = "attach-file-icon">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                            <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                          </svg>
+
+                    </button>
+                    <button class = "reply-button"> REPLY </button> 
+
+
+
+                </div>
+              
+
+
+
+
+            </div>
+        
+
+
+
+
+
+        </div>
+        <!-- End right column col -->
 
 
 
 
 
     </div>
+    <!-- End row -->
  
 </body>
 </html>
